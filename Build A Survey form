@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Employee Survey Form</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+            <h1 id="title" class="text-center">Employee Satisfaction Survey</h1>
+            <p id="description" class="description text-center">Thank you for participating in our Employee Satisfaction Survey. Please take a few minutes to complete this survey honestly and anonymously.</p>
+            </header>
+            <form id="survey-form">
+                <div class="div-group">
+                    <label id="name-label">Name</label>
+                    <input id="name" type="text" class="fieldset-control" placeholder="Enter your name" required>
+                    <label id="email-label">Email</label>
+                    <input id="email" type="email" class="fieldset-control" placeholder="Enter your email" required>
+                    <label id="number-label">Age<span class="clue">(optional)</span></label>
+                    <input id="number" type="number" class="fieldset-control" min="13" max="120" placeholder="Age">
+                </div>
+                <div class="div-group">
+                    <p>Which option best describes your current role?</p>
+                    <select id="dropdown" class="fieldset-control">
+                        <option disabled selected value>(select current role)</option>
+                        <option value="1">Intern</option>
+                        <option value="2">Contract</option>
+                        <option value="3">Full Time</option>
+                        <option value="4">Part Time</option>
+                        <option value="5">Other</option>
+                    </select> 
+                </div>      
+                <div class="div-group">
+                    <p>Please rate your overall satisfaction with the company.</p>
+                    <label><input name="user-recommend" value="definitely" type="radio" class="input-radio" checked />Very Satisfied</label>
+                    <label><input name="user-recommend" value="average" type="radio" class="input-radio" />Average</label>          
+                    <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Very Dissatisfied</label>
+                </div>
+
+                <div class="div-group">
+                    <p>How satisfied are you with your current work environment?</p>
+                    <label><input name="user-recommend" value="definitely" type="radio" class="input-radio" checked />Very Satisfied</label>
+                    <label><input name="user-recommend" value="average" type="radio" class="input-radio" />Average</label>          
+                    <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Very Dissatisfied</label>
+                </div>
+                <div class="div-group">
+                    <p>Rate the level of collaboration within your team:</p>
+                    <label><input name="user-recommend" value="very good" type="radio" class="input-radio" checked />Very Good</label>
+                    <label><input name="user-recommend" value="fair" type="radio" class="input-radio" />Fair</label>          
+                    <label><input name="user-recommend" value="poor" type="radio" class="input-radio" />Poor</label>
+                </div>
+                <div class="div-group">
+                    <p>How satisfied are you with the communication from management regarding company updates?</p>
+                    <label><input name="user-recommend" value="definitely" type="radio" class="input-radio" checked />Very Satisfied</label>
+                    <label><input name="user-recommend" value="average" type="radio" class="input-radio" />Average</label>          
+                    <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Very Dissatisfied</label>
+                </div>
+                <div class="div-group">
+                    <p>Rate the effectiveness of communication channels within the company:</p>
+                    <label><input name="user-recommend" value="very-effective" type="radio" class="input-radio" checked />Very Effective</label>
+                    <label><input name="user-recommend" value="somewhat-effective" type="radio" class="input-radio" />Somewhat Effective</label>          
+                    <label><input name="user-recommend" value="ineffective" type="radio" class="input-radio" />Ineffective</label>
+                </div>
+                <div class="div-group">
+                    <p>Are you satisfied with the opportunities for professional growth provided by the company?</p>
+                    <label><input name="user-recommend" value="definitely" type="radio" class="input-radio" checked />Very Satisfied</label>
+                    <label><input name="user-recommend" value="average" type="radio" class="input-radio" />Average</label>          
+                    <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Very Dissatisfied</label>
+                </div>
+                <div class="div-group">
+                    <p>How likely are you to recommend our company to others?</p>
+                    <label><input name="user-recommend" value="extremely-likely" type="radio" class="input-radio" checked />Extremely likely</label>
+                    <label><input name="user-recommend" value="very-likely" type="radio" class="input-radio" /> Very likely</label>          
+                    <label><input name="user-recommend" value="Neutral" type="radio" class="input-radio" />Neutral</label>
+                    <label><input name="user-recommend" value="somewhat-likely" type="radio" class="input-radio" />Somewhat likely</label>
+                    <label><input name="user-recommend" value="not-likely" type="radio" class="input-radio" />Not likely at all</label>
+                </div>
+                
+                <div class="div-group">
+                    <p>What would you like to see improved? <span class="clue">(Check all that apply)</span></p>
+                    <label><input name="prefer" value="projects" type="checkbox" class="input-checkbox" />Projects</label>
+                    <label><input name="prefer" value="challenges" type="checkbox" class="input-checkbox" />Challenges</label>
+                    <label><input name="prefer" value="meetups" type="checkbox" class="input-checkbox" />Meetups</label>
+                    <label><input name="prefer" value="additional-courses" type="checkbox" class="input-checkbox" />Additional Courses</label>
+                </div>
+                <div class="div-group">
+                    <p>Please share any additional comments or suggestions you may have regarding your experience with the company.</p>
+                    <textarea id="comments" class="comments" name="comments" placeholder="Enter your comment here...">                        
+                    </textarea>
+                </div>
+                <div class="div-group">
+                    <input type="submit" id="submit" class="submit-button">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
